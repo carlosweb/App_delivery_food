@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.2) 100%), url(./images/mink-mingle-IX6vgLXvNSY-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+}
+.login nav {
+  padding: 10px 0;
+}
+.login nav h1 {
+  text-align: center;
+}
+.login .text {
+  padding: 0 1rem;
+}
+.login .text h1, .login .text h5 {
+  color: #f2f2f2;
+}
+.login form {
+  padding: 0 1rem;
+}
+.login form input[type=text], .login form button {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.login form button {
+  margin-top: 3rem;
+}
+
+.menu {
+  margin: 1rem 0;
+}
+.menu .item {
+  background-color: #ffffff;
+  margin: 5px 10px 5px 0;
+  display: flex;
+  box-shadow: 0 0 6px 0px #dddddd;
+  border-radius: 10px;
+  place-content: center;
+  padding: 20px;
+}
+.menu .item img {
+  width: 50px;
+  height: 50px;
+}
+
+.last-order .item {
+  background-color: #ffffff;
+  margin: 5px 10px 5px 0;
+  display: flex;
+  box-shadow: 0 0 6px 0px #dddddd;
+  border-radius: 10px;
+  place-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.last-order .item img {
+  width: 50px;
+  height: 50px;
+}
+.last-order .item h5 {
+  margin: 10px 0;
+}
+.last-order .item .size {
+  background-color: #e6e6e6;
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+.last-order .item .price {
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+.last-order .item .bt-add {
+  background-color: #b40202;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 0.8rem;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #b40202;
+  width: 100%;
+}
+nav .link-item img {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+}
+nav .active {
+  padding: 1rem;
+  background-color: #b40202;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  transform: translateY(-15px);
+}
+
+/*# sourceMappingURL=style.css.map */
