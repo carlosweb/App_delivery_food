@@ -44,6 +44,29 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.search {
+  position: relative;
+  margin: 0 1rem;
+}
+.search input[type=text] {
+  border: none;
+  font-size: 1rem;
+  color: #737373;
+  box-shadow: 0 0 6px 0px #dddddd;
+  width: 100%;
+  padding: 15px 10px 15px 40px;
+  border-radius: 25px;
+  outline: none;
+}
+.search input[type=text]::placeholder {
+  color: #a1a1a1;
+}
+.search i {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
 .menu {
   margin: 1rem 0;
 }
@@ -103,6 +126,7 @@ body {
 .last-order .item .price {
   font-size: 0.8rem;
   margin: 10px 0;
+  font-weight: 600;
 }
 .last-order .item .bt-add {
   background-color: #b40202;
