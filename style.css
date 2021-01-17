@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,10 @@
   margin-top: 3rem;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .menu {
   margin: 1rem 0;
 }
@@ -46,16 +51,25 @@
   background-color: #ffffff;
   margin: 5px 10px 5px 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 0 6px 0px #dddddd;
   border-radius: 10px;
   place-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 .menu .item img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  padding: 5px;
+  background: #f1f1f1;
 }
 
+.last-order h3 {
+  margin: 1rem;
+}
 .last-order .item {
   background-color: #ffffff;
   margin: 5px 10px 5px 0;
@@ -70,8 +84,12 @@
   position: relative;
 }
 .last-order .item img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  padding: 5px;
+  background: #f1f1f1;
 }
 .last-order .item h5 {
   margin: 10px 0;
@@ -90,7 +108,7 @@
   background-color: #b40202;
   color: #ffffff;
   text-decoration: none;
-  padding: 5px;
+  padding: 5px 25px;
   font-size: 0.8rem;
   border-radius: 8px 8px 0 0;
   position: absolute;
