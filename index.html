@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Pizza Fake</title>
+    <title>App delivery food</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <i class="fas fa-search"></i>
 </div>
     
-
+    <!-- menu foods -->
     <div class="menu">
         <div class="splide" id="splide">
             <div class="splide__track">
@@ -64,7 +64,7 @@
 
     <!-- last order -->
     <div class="last-order">
-        <h3>Ultimos pedidos</h3>
+        <h2>Ultimos pedidos</h2>
 
         <div class="splide" id="last_order">
             <div class="splide__track">
@@ -112,6 +112,46 @@
     </div>
 
 
+    <!-- promotions -->
+    <div class="promotions">
+        <h3>Promoções</h3>
+
+        <div class="splide" id="promotions">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="item-promotion card-blue">
+                            <div class="title">
+                                    <h3>Combo hamburger + batata e MilkShake</h3>
+                            </div>
+                            <div class="image">
+                                <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/143395-pysnzzzleh-1593090551.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                            <div class="item-promotion card-green">
+                                    <div class="title">
+                                            <h3>Combo hamburger + batata e MilkShake</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./images/mink-mingle-IX6vgLXvNSY-unsplash.jpg" alt="">
+                                    </div>
+                                </div>
+                    </li>
+                    <li class="splide__slide">
+                       
+                    </li>
+                    <li class="splide__slide">
+                        
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- nav menu -->
     <nav>
         <div class="link-item active">
             <img src="./images/home.svg" alt="">
@@ -143,6 +183,16 @@
     }).mount();
     new Splide('#last_order', {
         perPage: 2,
+        rewind: true,
+        arrows: false,
+        pagination: false,
+        padding: {
+            right: '1rem',
+            left: '1rem',
+        },
+    }).mount();
+    new Splide('#promotions', {
+        perPage: 1,
         rewind: true,
         arrows: false,
         pagination: false,
