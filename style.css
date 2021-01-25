@@ -44,6 +44,21 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.top-app {
+  margin: 1rem 0;
+}
+
+h1 {
+  margin: 1rem;
+}
+h1::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #b40202;
+  display: block;
+}
+
 .item {
   background-color: #ffffff;
   margin: 5px 10px 5px 0;
@@ -73,6 +88,10 @@ body {
 
 .card-green {
   background-color: #02b44c;
+}
+
+.card-red {
+  background-color: #bd0a03;
 }
 
 .search {
@@ -110,9 +129,6 @@ body {
   background: #f1f1f1;
 }
 
-.last-order h3 {
-  margin: 1rem;
-}
 .last-order img {
   width: 60px;
   height: 60px;
