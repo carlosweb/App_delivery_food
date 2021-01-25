@@ -5,11 +5,14 @@ body{
 }
 
 .top-app {
-    margin: 1rem 0;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1{
     margin: 1rem;
+    
     &::after{
         content: "";
         width: 50px;
